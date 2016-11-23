@@ -112,6 +112,8 @@ class Sample2View /*extends SampleCvViewBase*/ {
 
 		//Log.i(TAG,"Raw image 2");
 
+		bb = ByteBuffer.allocate(bbmp.getRowBytes()*bbmp.getHeight());
+
 		bbmp.copyPixelsToBuffer(bb);  // bmp to bb
 		//measureTime[5] = connectedNode.getCurrentTime();
 
